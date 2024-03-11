@@ -5,7 +5,8 @@ const mongoose = require('mongoose');
 const userSchema = new mongoose.Schema({
   name: String,
   email: String,
-  enrolledCourses: [String], // Array of enrolled course names
+  enrolledCourses: [String],
+  // Define other fields as needed
 });
 
 module.exports = mongoose.model('User', userSchema);

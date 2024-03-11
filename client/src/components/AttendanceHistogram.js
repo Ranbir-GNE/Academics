@@ -1,64 +1,29 @@
-import React, { useEffect } from 'react';
-import { Pie, Bar } from 'react-chartjs-2';
-import axios from 'axios';
+// AttendanceHistogram.js
 
-// CoursePieChart.js
+import React from 'react';
 
+const AttendanceHistogram = ({ courses }) => {
+  // Check if courses array is empty or undefined
+  if (!courses || courses.length === 0) {
+    return (
+      <div className="attendance-histogram">
+        <p>No attendance data available</p>
+      </div>
+    );
+  }
 
-const CoursePieChart = ({ courses }) => {
-  console.log(courses);
-  const courseNames = courses?.map(course => course[0]);
-  const attendanceData = courses?.map(course => course[1]);
-  const courseMarks = courses?.map(course => course[2]);
-
-  // Pie chart data
-  const data = {
-    labels: courseNames,
-    datasets: [
-      {
-        label: 'Attendance',
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.6)',
-          'rgba(54, 162, 235, 0.6)',
-          'rgba(255, 206, 86, 0.6)',
-          'rgba(75, 192, 192, 0.6)',
-          'rgba(153, 102, 255, 0.6)',
-          'rgba(255, 159, 64, 0.6)',
-        ],
-        hoverBackgroundColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)',
-        ],
-        data: attendanceData,
-      },
-      {
-        label: 'Marks',
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.6)',
-          'rgba(54, 162, 235, 0.6)',
-          'rgba(255, 206, 86, 0.6)',
-          'rgba(75, 192, 192, 0.6)',
-          'rgba(153, 102, 255, 0.6)',
-          'rgba(255, 159, 64, 0.6)',
-        ],
-        hoverBackgroundColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)',
-        ],
-        data: courseMarks,
-      },
-    ],
-  };
-
-  return <Bar data={data} />;
+  return (
+    <div className="attendance-histogram">
+      {courses.map((course, index) => (
+        <div key={index} className="histogram-item">
+          <h3>{course.name}</h3>
+          <div className="histogram-bar" style={{ width: `${course.attendance}%` }}>
+            {course.attendance}%
+          </div>
+        </div>
+      ))}
+    </div>
+  );
 };
 
-export default CoursePieChart;
+export default AttendanceHistogram;
