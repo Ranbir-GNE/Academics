@@ -1,98 +1,105 @@
-/* Home.css */
-body{
-  top: 90px;
-  padding-bottom: 20px;
-}
-/* Set up the home container as a flex container with vertical alignment */
-.home-container {
-  
-  display: flex;
-  flex-direction: column;
+body {
+	top: 90px;
+	padding-bottom: 20px;
   align-items: center;
-  padding: 30px;
 }
 
-/* Set up the content container as a flex container with horizontal alignment */
+.home-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px
+}
+
 .content-container {
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  justify-content: space-between;
-  overflow-x: auto; /* Enable horizontal scrolling */
-  padding-bottom: 20px; /* Add padding to make room for scrollbar */
+	width: 100%;
+	max-width: 1200px;
+	display: flex;
+	justify-content: space-between;
+	overflow-x: auto;
+	padding-bottom: 20px
 }
 
-/* Welcome Box */
+
+.schedule-container,
 .welcome-container {
-  width: 45%;
+	width: 45%
 }
+/* .picture-container{
+  width: 20px;
+
+} */
 
 .welcome-box {
-  background-color: #efc9f6;
-  padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  margin-right: 20px;
+	background-color: #efc9f6;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+	border-radius: 4px;
+	margin-right: 20px
 }
 
-/* Calendar Box */
 .calendar-container {
-  width: 45%;
+  width:max-content;
   margin-right: 1px;
   margin-left: 1px;
   border-radius: 5px;
-}
-
-.calendar {
-  width: 90%; /* Adjust width as needed */
-  height: 300px; /* Adjust height as needed */
-  backdrop-filter: blur(50px);
-}
-
-/* Schedule Box */
-.schedule-container {
-  width: 45%;
+	margin-right: 1px;
+	margin-left: 1px;
+	border-radius: 5px
+  
 }
 
 .schedule-box {
-  background-color: #FFFFFF;
-  padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  margin-top: 20px;
-  margin-left: 30px;
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+	border-radius: 5px;
+	margin-left: 30px;
+	margin-top: 20px
 }
 
-/* Style for the items inside the schedule box */
+.calendar {
+	width: 100%;
+	height: 300px;
+	/* backdrop-filter: blur(50px) */
+}
+
+/* .picture-box {
+	display: flex;
+  width:50px;
+  height: 50px;
+
+} */
+
 .schedule-item {
-  margin-bottom: 10px;
+	margin-bottom: 10px
 }
 
-/* Boxes Container */
 .boxes-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 80%;
-  margin-top: 20px;
-}
-
-/* Individual Box Styles */
-.box {
-  width: calc(50% - 10px);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 50%;
+  height: fit-content;
+	margin-top: 20px;
   margin-bottom: 20px;
+  
 }
 
-/* Apply background colors */
+.box {
+	width: calc(50% - 10px);
+	margin-bottom: 20px
+}
+
 .box:nth-child(odd) {
-  background-color: #7dbbcb;
-  margin-right: 20px;
+	background-color: #7dbbcb;
+	margin-right: 20px
 }
 
-.box:nth-child(even) {
-  background-color: #92bbdb;
+.box:nth-child(2n) {
+	background-color: #92bbdb
 }
 
 .box:hover {
-  background-color: #6f87b0;
+	background-color: #6f87b0
 }

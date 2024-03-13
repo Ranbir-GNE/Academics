@@ -5,10 +5,12 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 import ProgressChart from '../components/ProgressChart';
 import Calendar from '../components/Calendar';
+import Schedule from '../components/Schedule';
 import AttendanceHistogram from '../components/AttendanceHistogram';
 import CoursePieChart from '../components/CoursePieChart';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import Download from '../components/Download';
 
 const Home = () => {
   const [userData, setUserData] = useState(null);
@@ -50,6 +52,12 @@ const Home = () => {
         </div>
         <div className="calendar-container">
           <Calendar />
+        </div>
+        <div className="picture-container">
+          <Schedule />
+        </div>
+        <div className="picture-container">
+          <Download />
         </div>
         <div className="schedule-container">
           <div className="schedule-box">
