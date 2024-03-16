@@ -6,24 +6,24 @@ function Navbar() {
   return (
     <nav className="navbar">
       <ul>
-        <Link to="https://edconnect-dashboard.vercel.app/">
-          <li>Dashboard</li>
+        <Link to="https://ed-connect.vercel.app">
+          <li>College Portal</li>
         </Link>
 
         {/* <Link to="/admin">
           <li>Admin</li>
         </Link> */}
 
-        <Link to="/student">
+        <Link to="https://ed-connect.vercel.app/student">
           <li>My Account</li>
         </Link>
         
         <a href="https://curacare.vercel.app/" target="_blank" rel="noopener noreferrer">
           <li>Online Session </li>
         </a>
-        <Link to="https://chat-psi-jet.vercel.app/">
-          <li>Chat-App</li>
-        </Link>
+        <a href="https://chat-psi-jet.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <li>Chat-App</li>
+        </a>
 
         {/* <Link to="/academics">
           <li>Academics</li>
@@ -45,7 +45,7 @@ function Navbar() {
           <li>Communicate</li>
         </a> */}
 
-        <Link to="/settings">
+        <Link to="https://ed-connect.vercel.app/settings">
           <li>Settings</li>
         </Link>
 
@@ -53,7 +53,7 @@ function Navbar() {
           <li>Change Password</li>
         </Link> */}
 
-        <Link to="/logout">
+        <Link to="https://ed-connect.vercel.app/startpage">
           <li>Logout</li>
         </Link>
         {/* Add more links as needed */}
