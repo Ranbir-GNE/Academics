@@ -6,23 +6,30 @@ function Navbar() {
   return (
     <nav className="navbar">
       <ul>
-        <Link to="/dashboard">
+        <Link to="https://edconnect-dashboard.vercel.app/">
           <li>Dashboard</li>
         </Link>
 
-        <Link to="/admin">
+        {/* <Link to="/admin">
           <li>Admin</li>
-        </Link>
+        </Link> */}
 
         <Link to="/student">
-          <li>Student</li>
+          <li>My Account</li>
+        </Link>
+        
+        <a href="https://curacare.vercel.app/" target="_blank" rel="noopener noreferrer">
+          <li>Online Session </li>
+        </a>
+        <Link to="https://chat-psi-jet.vercel.app/">
+          <li>Chat-App</li>
         </Link>
 
-        <Link to="/academics">
+        {/* <Link to="/academics">
           <li>Academics</li>
-        </Link>
+        </Link> */}
 
-        <Link to="/fees">
+        {/* <Link to="/fees">
           <li>Fees Collection</li>
         </Link>
 
@@ -36,19 +43,15 @@ function Navbar() {
 
         <a href="https://curacare.vercel.app/" target="_blank" rel="noopener noreferrer">
           <li>Communicate</li>
-        </a>
-
-        <Link to="/my-account">
-          <li>My Account</li>
-        </Link>
+        </a> */}
 
         <Link to="/settings">
           <li>Settings</li>
         </Link>
 
-        <Link to="/change-password">
+        {/* <Link to="/change-password">
           <li>Change Password</li>
-        </Link>
+        </Link> */}
 
         <Link to="/logout">
           <li>Logout</li>

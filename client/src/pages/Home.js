@@ -11,6 +11,7 @@ import CoursePieChart from '../components/CoursePieChart';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Download from '../components/Download';
+import Navbar from '../components/Navbar';
 
 const Home = () => {
   const [userData, setUserData] = useState(null);
