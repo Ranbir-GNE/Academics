@@ -18,7 +18,7 @@ function Navbar() {
           <li>My Account</li>
         </Link>
         
-        <a href="https://curacare.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <a href="https://edconnect-meeting.vercel.app/" target="_blank" rel="noopener noreferrer">
           <li>Online Session </li>
         </a>
         <a href="https://chat-psi-jet.vercel.app/" target="_blank" rel="noopener noreferrer">
