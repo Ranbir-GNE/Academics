@@ -6,7 +6,7 @@ const Download = () => {
     return (
         <div className="container"> {/* New container */}
             <img src={downloadImage} className="image" /> {/* Image */}
-            <a href="https://documents-bice.vercel.app/"><button>Documents</button></a> {/* New hyperlink */}
+            <a href="https://edconnect-documents.vercel.app/"><button>Documents</button></a> {/* New hyperlink */}
         </div>
     ); // Add closing parenthesis here
 };
