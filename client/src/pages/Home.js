@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import './Home.css';
-import ProgressChart from '../components/ProgressChart';
-import Calendar from '../components/Calendar';
-import Schedule from '../components/Schedule';
-import AttendanceHistogram from '../components/AttendanceHistogram';
-import CoursePieChart from '../components/CoursePieChart';
-import Download from '../components/Download';
-import axios from 'axios';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell, faVideo, faBullhorn } from '@fortawesome/free-solid-svg-icons';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import "./Home.css";
+import ProgressChart from "../components/ProgressChart";
+import Calendar from "../components/Calendar";
+import Schedule from "../components/Schedule";
+import AttendanceHistogram from "../components/AttendanceHistogram";
+import CoursePieChart from "../components/CoursePieChart";
+import Download from "../components/Download";
+import axios from "axios";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBell, faVideo, faBullhorn } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   const [userData, setUserData] = useState(null);
@@ -18,13 +18,14 @@ const Home = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const url = 'https://edconnect-dashboard-backend.vercel.app/api/user/65ec332f92ffe03ab5dcfdf0';
-        console.log('Fetching user data from:', url);
+        const url =
+          "https://edconnect-dashboard-backend.vercel.app/api/user/65ec332f92ffe03ab5dcfdf0";
+        console.log("Fetching user data from:", url);
         const response = await axios.get(url);
         setUserData(response.data);
         setAttendanceData(response.data.Courses);
       } catch (error) {
-        console.error('Error fetching user data:', error);
+        console.error("Error fetching user data:", error);
       }
     };
 
@@ -82,6 +83,7 @@ const Home = () => {
           <Link to="/assignments">
             <h3>Assignments</h3>
             <p>Assignment details here...</p>
+          </Link>
           <Link to="https://assignments-edconnect.vercel.app/">
             <button>Assignment</button>
           </Link>
@@ -97,6 +99,6 @@ const Home = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Home;
