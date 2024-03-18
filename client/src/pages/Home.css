@@ -1,3 +1,5 @@
+/* Home.css */
+
 .body {
 	top: 90px;
 	padding-bottom: 20px;
@@ -18,12 +20,15 @@
 	max-width: 1200px;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	justify-content: center; /* Add this line */
 	overflow-x: auto;
 	padding-bottom: 20px;
 }
 
 .welcome-container {
+	width: 100%;
+	margin-bottom: 20px;
 	margin-top: 90px;
 	width: 100%;
 	margin-bottom: 20px;
@@ -38,9 +43,8 @@
 	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
 	border-radius: 4px;
 	margin-right: 20px;
-	width: 90%;
+	width: 100%;
 	text-align: center;
-	align-items: center;
 	font-size: 24px;
 }
 
@@ -69,6 +73,7 @@
 .boxes-container {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	justify-content: center;
 	width: 100%;
 	margin-top: 20px;
