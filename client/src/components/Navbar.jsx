@@ -10,6 +10,10 @@ function Navbar() {
           <li>College Portal</li>
         </Link>
 
+        <Link to="https://event-calender-edconnect.vercel.app/">
+          <li>Event Calender</li>
+        </Link>
+
         {/* <Link to="/admin">
           <li>Admin</li>
         </Link> */}

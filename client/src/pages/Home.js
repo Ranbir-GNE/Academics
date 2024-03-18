@@ -74,7 +74,7 @@ const Home = () => {
       <div className="boxes-container">
         <div className="box">
           <Link to="/courses">
-            <h3>Course Pie Chart</h3>
+            <h3>Attendance</h3>
             <CoursePieChart courses={attendanceData} />
           </Link>
         </div>
@@ -82,6 +82,8 @@ const Home = () => {
           <Link to="/assignments">
             <h3>Assignments</h3>
             <p>Assignment details here...</p>
+          <Link to="https://assignments-edconnect.vercel.app/">
+            <button>Assignment</button>
           </Link>
         </div>
         <div className="box">

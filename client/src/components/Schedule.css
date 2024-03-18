@@ -6,15 +6,15 @@
     backdrop-filter: blur(50px);
     width: fit-content;
     height: fit-content;
-    background: #ffffff5d;
+    background: #68c5ff42;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     border-radius: 4px;
     margin: 20px; /* Add margin to all sides */
   }
   
   .container img {
-    width: 175px;
-    height: 175px;
+    /* width: 250px; */
+    height: 250px;
   }
   
   .container a {
@@ -22,8 +22,10 @@
     font-size: 20px;
   }
   .container a button {
-    background-color: #4caf4fa8; /* Green */
+    background-color: #004a95; /* Green */
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    color: #fff;
+    font-weight: bold;
 
     border-radius: 4px;
     padding: 10px 27px;
