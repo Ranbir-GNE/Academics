@@ -1,38 +1,37 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    backdrop-filter: blur(50px);
-    width: fit-content;
-    height: fit-content;
-    background: #68c5ff42;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    border-radius: 4px;
-    margin: 20px; /* Add margin to all sides */
-  }
-  
-  .container img {
-    /* width: 250px; */
-    height: 250px;
-  }
-  
-  .container a {
-    text-align: center;
-    font-size: 20px;
-  }
-  .container a button {
-    background-color: #004a95; /* Green */
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    color: #fff;
-    font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(50px);
+  width: fit-content;
+  height: fit-content;
+  background: #68c5ff42;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  border-radius: 4px;
+  margin: 20px; /* Add margin to all sides */
+}
 
-    border-radius: 4px;
-    padding: 10px 27px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 2px 1px;
-    cursor: pointer;
-  }
+.container img {
+  height: 250px;
+}
+
+.container a {
+  text-align: center;
+  font-size: 20px;
+}
+
+.container a button {
+  background-color: #004a95; /* Green */
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 10px 27px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0; /* Add margin top and bottom */
+  cursor: pointer;
+}
