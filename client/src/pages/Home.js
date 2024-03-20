@@ -91,7 +91,7 @@ const Home = () => {
           <h3>TO-DO</h3>
           <Link to="/todo">
             <img src={require('../assets/image4.png')} alt="TO-DO" />
-            {/* <button>TO DO PLANNER</button> */}
+            
           </Link>
         </div>
         <div className="box">
