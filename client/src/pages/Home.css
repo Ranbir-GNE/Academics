@@ -82,7 +82,7 @@
     margin-bottom: 20px;
     margin: 20px;
     border-radius: 8px; /* Curved edges */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    box-shadow: 0 0 10px rgba(125, 159, 212, 0.1); /* Add box shadow */
 }
 
 .box:nth-child(odd) {

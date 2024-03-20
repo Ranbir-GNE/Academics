@@ -82,16 +82,14 @@ const Home = () => {
         </div>
         <div className="box">
           <h3>Assignments</h3>
-          <Link to="#">
+          <Link to="https://assignments-edconnect.vercel.app/">
             <img src={require('../assets/image3.png')} alt="Assignment" />
-            <button onClick={() => window.open("https://assignments-edconnect.vercel.app/", "_blank")}>View Assignments</button>
           </Link>
         </div>
         <div className="box">
           <h3>TO-DO</h3>
           <Link to="/todo">
             <img src={require('../assets/image4.png')} alt="TO-DO" />
-            
           </Link>
         </div>
         <div className="box">

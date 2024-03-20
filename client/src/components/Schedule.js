@@ -1,5 +1,5 @@
 import React from 'react';
-import scheduleImage from '../assets/schedule.png'; // Import the image directly
+import scheduleImage from '../assets/image5.png'; // Import the image directly
 import './Schedule.css'; // Import the CSS file
 
 const Schedule = () => {

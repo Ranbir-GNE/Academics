@@ -1,5 +1,5 @@
 import React from 'react';
-import downloadImage from '../assets/download.png'; // Import the image directly
+import downloadImage from '../assets/image6.png'; // Import the image directly
 import './Schedule.css'; // Import the CSS file
 
 const Download = () => {
