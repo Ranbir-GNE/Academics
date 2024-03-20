@@ -6,7 +6,7 @@
   backdrop-filter: blur(50px);
   width: fit-content;
   height: fit-content;
-  background: #68c5ff42;
+  background: #4099d3;
   box-shadow: 0 0 10px rgba(0, 0, 0, .1);
   border-radius: 4px;
   margin: 20px; /* Add margin to all sides */
@@ -22,7 +22,7 @@
 }
 
 .container a button {
-  background-color: #004a95; /* Green */
+  background-color: #09245d; /* Green */
   box-shadow: 0 0 10px rgba(0, 0, 0, .1);
   color: #fff;
   font-weight: bold;
