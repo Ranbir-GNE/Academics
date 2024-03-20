@@ -1,106 +1,119 @@
-/* Home.css */
-
 .body {
-	top: 90px;
-	padding-bottom: 20px;
-	align-items: center;
-	justify-content: center; /* Add this line */
+    top: 90px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .home-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center; /* Add this line */
-	padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center; /* Center align all content */
 }
 
 .content-container {
-	width: 100%;
-	max-width: 1200px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	justify-content: center; /* Add this line */
-	overflow-x: auto;
-	padding-bottom: 20px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    border-radius: 10px; /* Curved edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
 .welcome-container {
-	width: 100%;
-	margin-bottom: 20px;
-	margin-top: 90px;
-	width: 100%;
-	margin-bottom: 20px;
-	display: flex;
-	align-items: center; /* Add this line */
-	justify-content: center; /* Add this line */
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .welcome-box {
-	background-color: #efc9f6;
-	padding: 30px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-	border-radius: 4px;
-	margin-right: 20px;
-	width: 100%;
-	text-align: center;
-	font-size: 24px;
+    background-color: #add8e6; /* light blue */
+    padding: 30px;
+    border-radius: 8px; /* Curved edges */
+    margin-right: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
 }
 
 .welcome-box h2 {
-	margin: 0;
+    margin: 0;
 }
 
 .calendar-container,
 .picture-container,
 .schedule-container {
-	flex: 1;
-	margin-right: 10px;
+    flex: 1;
+    margin-right: 10px;
 }
 
 .schedule-container {
-	margin-top: 20px;
+    margin-top: 20px;
 }
 
 .schedule-box {
-	background-color: #fff;
-	padding: 15px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-	border-radius: 5px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px; /* Curved edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
 }
 
 .boxes-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	justify-content: center;
-	width: 100%;
-	margin-top: 20px;
-	margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .box {
-	width: calc(40%- 6px); /* Adjust box size to 25% */
-	margin-bottom: 20px;
-	margin:20px;
+    width: calc(25% - 6px);
+    margin-bottom: 20px;
+    margin: 20px;
+    border-radius: 8px; /* Curved edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
 .box:nth-child(odd) {
-	background-color: #7dbbcb;
-	margin-right: 20px;
+    background-color: #bfe8f2;
+    margin-right: 20px;
 }
 
 .box:nth-child(2n) {
-	background-color: #92bbdb;
+    background-color: #9fc0d9;
 }
 
 .box:hover {
-	background-color: #6f87b0;
+    background-color: #6f87b0;
 }
+
 .box a button {
-    background-color: #004a95; /* Green */
+    background-color: #004a95;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     color: #fff;
     font-weight: bold;
+    margin-bottom: 10px; /* Add space below the button */
+}
+
+.schedule-item img {
+    width: 24px;
+    height: 24px;
+    margin-top: 20px; /* Add space above the image */
+}
+
+/* Adjust image size for Material and Notice Board boxes */
+.box img {
+    max-width: 100%;
+    max-height: 100%;
 }

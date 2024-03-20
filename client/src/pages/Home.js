@@ -81,21 +81,34 @@ const Home = () => {
           </Link>
         </div>
         <div className="box">
-          <Link to="/assignments">
-            <h3>Assignments</h3>
-            <p>Assignment details here...</p>
-          </Link>
-          <Link to="https://assignments-edconnect.vercel.app/">
-            <button>Assignment</button>
+          <h3>Assignments</h3>
+          <Link to="#">
+            <img src={require('../assets/image3.png')} alt="Assignment" />
+            <button onClick={() => window.open("https://assignments-edconnect.vercel.app/", "_blank")}>View Assignments</button>
           </Link>
         </div>
         <div className="box">
-          <h3>Attendance</h3>
-          <AttendanceHistogram data={attendanceData} />
+          <h3>TO-DO</h3>
+          <Link to="/todo">
+            <img src={require('../assets/image4.png')} alt="TO-DO" />
+            
+          </Link>
         </div>
         <div className="box">
           <h3>Progress Chart</h3>
           <ProgressChart courses={attendanceData} />
+        </div>
+        <div className="box">
+          <h3>Material</h3>
+          <Link to="https://study-material-edconnnect.vercel.app/">
+            <img src={require('../assets/image1.png')} alt="Material" />
+          </Link>
+        </div>
+        <div className="box">
+          <h3>Notice Board</h3>
+          <Link to="/noticeboard">
+            <img src={require('../assets/image2.png')} alt="Notice Board" />
+          </Link>
         </div>
       </div>
     </div>
