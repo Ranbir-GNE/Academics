@@ -104,7 +104,7 @@ const Home = () => {
         </div>
         <div className="box">
           <h3>Notice Board</h3>
-          <Link to="/noticeboard">
+          <Link to="https://notice-board-nine.vercel.app/">
             <img src={require('../assets/image2.png')} alt="Notice Board" />
           </Link>
         </div>
