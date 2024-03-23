@@ -8,24 +8,33 @@ const Calendar = () => {
   const currentDate = new Date();
   const year = currentDate.getFullYear();
   const month = currentDate.getMonth();
-  
+
   // Get the number of days in the current month
   const daysInMonth = new Date(year, month + 1, 0).getDate();
-  
+
   // Get the first day of the month
   const firstDayOfMonth = new Date(year, month, 1).getDay();
-  
+
   // Generate an array of days in the month
   const daysArray = Array.from({ length: daysInMonth }, (_, i) => i + 1);
-  
+
   // Generate an array of empty cells for days before the first day of the month
   const emptyCells = Array.from({ length: firstDayOfMonth }, () => null);
-  
+
   // Combine the empty cells and days array to create the calendar grid
   const calendarGrid = [...emptyCells, ...daysArray];
-  
+
+  // Array of month names
+  const monthNames = [
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'
+  ];
+
   return (
     <div className="calendar">
+      <div className="month-name">
+        {monthNames[month]} {year}
+      </div>
       <table>
         <thead>
           <tr>
