@@ -12,7 +12,7 @@ const App = () => {
         <Navbar /> {/* Render Navbar component */}
         <div className="content">
           <Routes> {/* Wrap routes in a Routes component */}
-            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/courses" element={<CoursePage />} />
             <Route path="/assignments" element={<AssignmentPage />} />
           </Routes>
