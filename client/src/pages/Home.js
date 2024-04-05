@@ -44,6 +44,7 @@ const Home = () => {
         <div className="calendar-container">
           <Calendar />
         </div>
+
         <div className="picture-container">
           <Schedule />
         </div>
@@ -77,7 +78,10 @@ const Home = () => {
         <div className="box">
           <Link to="/courses">
             <h3>Attendance</h3>
-            <CoursePieChart courses={attendanceData} />
+            <Link to="*">
+            <img src={require('../assets/academics.gif')} alt="TO-DO" />
+          </Link>
+            {/* <CoursePieChart courses={attendanceData} /> */}
           </Link>
         </div>
         <div className="box">
@@ -88,13 +92,16 @@ const Home = () => {
         </div>
         <div className="box">
           <h3>TO-DO</h3>
-          <Link to="/todo">
+          <Link to="https://mern-todo-roan.vercel.app/">
             <img src={require('../assets/image4.png')} alt="TO-DO" />
           </Link>
         </div>
         <div className="box">
           <h3>Progress Chart</h3>
-          <ProgressChart courses={attendanceData} />
+          <Link to="*">
+            <img src={require('../assets/progress.gif')} alt="Material" />
+            </Link>
+          {/* <ProgressChart courses={attendanceData} /> */}
         </div>
         <div className="box">
           <h3>Material</h3>
