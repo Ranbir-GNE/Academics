@@ -87,13 +87,13 @@ const Home = () => {
         <div className="box">
           <h3>Assignments</h3>
           <Link to="https://assignments-edconnect.vercel.app/">
-            <img src={require('../assets/image3.png')} alt="Assignment" />
+            <img src={require('../assets/imagee3.gif')} alt="Assignment" />
           </Link>
         </div>
         <div className="box">
           <h3>TO-DO</h3>
           <Link to="https://mern-todo-roan.vercel.app/">
-            <img src={require('../assets/image4.png')} alt="TO-DO" />
+            <img src={require('../assets/TO.gif')} alt="TO-DO" />
           </Link>
         </div>
         <div className="box">
@@ -106,13 +106,13 @@ const Home = () => {
         <div className="box">
           <h3>Material</h3>
           <Link to="https://study-material-edconnnect.vercel.app/">
-            <img src={require('../assets/image1.png')} alt="Material" />
+            <img src={require('../assets/imagee1.gif')} alt="Material" />
           </Link>
         </div>
         <div className="box">
           <h3>Notice Board</h3>
           <Link to="https://notice-board-nine.vercel.app/">
-            <img src={require('../assets/image2.png')} alt="Notice Board" />
+            <img src={require('../assets/imagee2.gif')} alt="Notice Board" />
           </Link>
         </div>
       </div>
