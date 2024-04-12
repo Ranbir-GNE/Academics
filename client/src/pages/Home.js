@@ -20,7 +20,7 @@ const Home = () => {
       try {
         const url =
           // https://edconnect-dashboard-backend.vercel.app
-          "https://edconnect-dashboard-backend.vercel.app/api/user/65ec332f92ffe03ab5dcfdf0";
+          "https://academics-2rs9.onrender.com//api/user/65ec332f92ffe03ab5dcfdf0";
         console.log("Fetching user data from:", url);
         const response = await axios.get(url);
         setUserData(response.data);
