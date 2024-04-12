@@ -98,7 +98,7 @@ const Home = () => {
         </div>
         <div className="box">
           <h3>Progress Chart</h3>
-          <Link to="*">
+          <Link to="https://attendance-6aq7.onrender.com/">
             <img src={require('../assets/progress.gif')} alt="Material" />
             </Link>
           {/* <ProgressChart courses={attendanceData} /> */}
