@@ -78,7 +78,7 @@ const Home = () => {
         <div className="box">
           <Link to="/courses">
             <h3>Attendance</h3>
-            <Link to="*">
+            <Link to="https://attendance-gold.vercel.app/">
             <img src={require('../assets/academics.gif')} alt="TO-DO" />
           </Link>
             {/* <CoursePieChart courses={attendanceData} /> */}
