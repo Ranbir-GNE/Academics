@@ -76,12 +76,9 @@ const Home = () => {
       </div>
       <div className="boxes-container">
         <div className="box">
-          <Link to="/courses">
+          <Link to="https://attendance-gold.vercel.app">
             <h3>Attendance</h3>
-            <Link to="https://attendance-gold.vercel.app/">
             <img src={require('../assets/academics.gif')} alt="TO-DO" />
-          </Link>
-            {/* <CoursePieChart courses={attendanceData} /> */}
           </Link>
         </div>
         <div className="box">
@@ -115,6 +112,12 @@ const Home = () => {
             <img src={require('../assets/imagee2.gif')} alt="Notice Board" />
           </Link>
         </div>
+        {/* <div className="box">
+          <h3>Admit Card</h3>
+          <Link to="https://admitcard-edconnect.vercel.app//">
+            <img src={require('../assets/imagee2.gif')} alt="Notice Board" />
+          </Link>
+        </div> */}
       </div>
     </div>
   );
