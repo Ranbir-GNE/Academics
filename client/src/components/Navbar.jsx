@@ -1,47 +1,51 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { a } from 'react-router-dom';
 import "./Navbar.css";
 
 function Navbar() {
   return (
     <nav className="navbar">
       <ul>
-        <Link to="https://edconnect-dashboard-blond.vercel.app/">
+        <a href="https://edconnect-dashboard-blond.vercel.app/">
           <li>Dashboard</li>
-        </Link>
+        </a>
 
-        <Link to="https://event-calender-edconnect.vercel.app/">
+        <a href="https://event-calender-edconnect.vercel.app/">
           <li>Event Calender</li>
-        </Link>
-        
-        <a href="https://edconnect-meeting.vercel.app/" target="_blank" rel="noopener noreferrer">
+        </a>
+
+        <a
+          href="https://edconnect-meeting.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <li>Online Session </li>
         </a>
-        <Link to="https://chat-psi-jet.vercel.app/">
+        <a href="https://chat-psi-jet.vercel.app/">
           <li>Chat-App</li>
-        </Link>
-        <Link to="https://ed-connect.vercel.app/student">
+        </a>
+        <a href="https://ed-connect.vercel.app/student">
           <li>My Account</li>
-        </Link>
-        
-        {/* <Link to="/examination">
+        </a>
+
+        {/* <a href="/examination">
           <li>Examinations</li>
-        </Link>
+        </a>
 
-        <Link to="/attendance">
+        <a href="/attendance">
           <li>Attendance</li>
-        </Link> */}
+        </a> */}
 
-        <Link to="https://ed-connect.vercel.app/settings">
+        <a href="https://ed-connect.vercel.app/settings">
           <li>Settings</li>
-        </Link>
+        </a>
 
-        <Link to="https://ed-connect.vercel.app/startpage">
+        <a href="https://ed-connect.vercel.app/startpage">
           <li>Logout</li>
-        </Link>
-        {/* Add more links as needed */}
+        </a>
+        {/* Add more as as needed */}
       </ul>
-    </nav >
+    </nav>
   );
 }
 
