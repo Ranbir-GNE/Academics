@@ -76,7 +76,7 @@ const Home = () => {
       </div>
       <div className="boxes-container">
         <div className="box">
-          <Link to="https://attendance-gold.vercel.app">
+          <Link to="https://attendance-kappa-smoky.vercel.app/">
             <h3>Attendance</h3>
             <img src={require('../assets/academics.gif')} alt="TO-DO" />
           </Link>
