@@ -20,9 +20,9 @@ function Navbar() {
         <Link to="https://chat-psi-jet.vercel.app/">
           <li>Chat-App</li>
         </Link>
-        {/* <Link to="https://ed-connect.vercel.app/student">
+        <Link to="https://ed-connect.vercel.app/student">
           <li>My Account</li>
-        </Link> */}
+        </Link>
         
         {/* <Link to="/examination">
           <li>Examinations</li>
@@ -32,9 +32,9 @@ function Navbar() {
           <li>Attendance</li>
         </Link> */}
 
-        {/* <Link to="https://ed-connect.vercel.app/settings">
+        <Link to="https://ed-connect.vercel.app/settings">
           <li>Settings</li>
-        </Link> */}
+        </Link>
 
         <Link to="https://ed-connect.vercel.app/startpage">
           <li>Logout</li>
